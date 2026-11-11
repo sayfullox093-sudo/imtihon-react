@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+            <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+
+
+<div class="max-lg:collapse bg-base-200 lg:mb-48 shadow-sm w-full rounded-md">
+  <input id="navbar-1-toggle" class="peer hidden" type="checkbox" />
+  <label for="navbar-1-toggle" class="fixed inset-0 hidden max-lg:peer-checked:block"></label>
+  <div class="collapse-title navbar">
+    <div class="navbar-start">
+      <label for="navbar-1-toggle" class="btn btn-ghost lg:hidden">
+        <svg aria-label="Menu" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </label>
+      <button class="btn btn-ghost text-xl">daisyUI</button>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><button><a href="comments.html">Comments</a></button>
+             </li>
+</ul>
+    </div>
+    <div class="navbar-end">
+      <input id="input" type="text" placeholder="Search" class="input w-64 lg:w-auto" />
+    </div>
+  </div>
+
+  <div class="flex justify-end max-w-[80%] mx-auto my-10">
+
+<button class="btn btn-primary" onclick="my_modal_1.showModal()">Maqsulot Qoshish</button>
+<dialog id="my_modal_1"  class="modal">
+<div class="modal-box">
+<div class="w-full flex flex-wrap gap-4">
+
+
+  <input type="text" placeholder="Maqsulot nomi" id="productName"
+  class="input input-primary w-[45%]">
+  <input type="text" placeholder="Maqsulot tavsifi" id="productDesc"
+  class="input input-primary w-[45%]">
+  <input type="text" placeholder="Maqsulot narxi" id="productPrice"
+  class="input input-primary w-[45%]">
+  <input type="text" placeholder="Maqsulot turi" id="productCategory"
+  class="input input-primary w-[45%]">
+    <input type="text" placeholder="Maqsulot Bahosi" id="productRating"
+  class="input input-primary w-[45%]">
+    <input type="text" placeholder="Maqsulot Soni" id="productStock"
+  class="input input-primary w-[45%]">
+    <input type="text" placeholder="Maqsulot Chegirma narxi" id="productDiscount"
+  class="input input-primary w-[45%]">
+    <input type="text" placeholder="Maqsulot rasimi" id="productimg"
+  class="input input-primary w-[45%]">
+</div>
+<div class="modal-action">
+<form method="dialog">
+<button class="btn btn-error text-white">Ortga</button>
+<button class="btn btn-primary" id="addBtn">Qoshish</button>
+</dialog>
+
+</form>
+</div>
+</div>
+
+
+<div class="flex flex-wrap gap-4 justify-center " id="parent"></div>
+
+    <script src="products.js"></script>
+</body>
+</html>
